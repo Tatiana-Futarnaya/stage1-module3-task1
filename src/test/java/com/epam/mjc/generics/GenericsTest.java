@@ -55,7 +55,7 @@ public class GenericsTest {
 
     @Test
     public void testGenericClone() {
-        List<Number> number = new ArrayList<>();
+        List<? super Object> number = new ArrayList<>();
         List<Integer> integer = Arrays.asList(1, 2);
         try {
             generics.cloneMethod(number, integer);
